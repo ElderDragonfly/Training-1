@@ -1,0 +1,109 @@
+@media (max-width: 1230px) {
+    .nav-list {
+        display: none;
+    }
+
+    .nav-button {
+        display: block;
+    }
+
+    .nav.open .nav-list {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 40px;
+
+        padding: 46px 30px;
+    }
+
+    .nav.open .nav-list__link {
+        font-size: 34px;
+        font-weight: 600;
+        color: #828282;
+    }
+    .nav.open .nav-list__link.active {
+        color: #090909;
+    }
+
+    .nav-button {
+        position: absolute;
+        z-index: 2;
+
+        top: 46px;
+        right: 36px;
+    }
+
+    .nav.open .nav-button {
+        position: fixed;
+    }
+
+    .header-row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .header-content {
+        margin-top: 0;
+    }
+
+    .header-nav {
+        margin-bottom: 50px;
+    }
+
+    .header-img {
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-heading {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .header-heading span {
+        font-size: 28px;
+    }
+    .services {
+        padding: 60px 0;
+    }
+
+    .portfolio {
+        padding: 60px 0;
+
+    }
+    .portfolio-title {
+        margin-bottom: 50px;
+    }
+    .project:not(:last-child) {
+        margin-bottom: 55px;
+    }
+    .project-img {
+        margin-bottom: 30px;
+    }
+
+    .contacts {
+        padding: 60px 0;
+    }
+    .contacts-title {
+        margin-bottom: 20px;
+    }
+    .contacts-content {
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin-bottom: 70px;
+    }
+    .contacts-sotial {
+        column-gap: 50px;
+        margin-bottom: 20px;
+    }
+}
